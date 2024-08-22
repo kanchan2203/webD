@@ -1,0 +1,33 @@
+  body{
+    perspective: 980px;
+  }
+ 
+ .parent{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    margin: 20px auto;
+    transition: 4s;
+    transform-style: preserve-3d;
+}
+.parent:hover{
+    transform: rotateY(180deg);
+}
+#side_a{
+ height: 100%;
+ width: 100%;
+ position: absolute;
+}
+#side_b{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+ backface-visibility: hidden;
+
+    /* transform: rotateY(180deg); */
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
